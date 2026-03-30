@@ -1,0 +1,30 @@
+=== Task 4: Navigation with Paths ===
+--- Absolute path to HR/policies ---
+/home/pongmengheang/os-se-p20240041/os-lab-p20240041/lab2/techcorp/hr/policies
+leave_policy.txt
+remote_work.txt
+--- Up to hr/ ---
+/home/pongmengheang/os-se-p20240041/os-lab-p20240041/lab2/techcorp/hr
+--- Relative path to onboarding/ ---
+/home/pongmengheang/os-se-p20240041/os-lab-p20240041/lab2/techcorp/hr/onboarding
+checklist.txt
+welcome_guide.txt
+--- Sideways to engineering/frontend/ ---
+/home/pongmengheang/os-se-p20240041/os-lab-p20240041/lab2/techcorp/engineering/frontend
+app_config.txt
+index.html
+styles.css
+--- Absolute path to marketing/campaigns/ ---
+/home/pongmengheang/os-se-p20240041/os-lab-p20240041/lab2/techcorp/marketing/campaigns
+q1_launch.txt
+social_media.txt
+--- cd - (back to previous directory) ---
+/home/pongmengheang/os-se-p20240041/os-lab-p20240041/lab2/techcorp/engineering/frontend
+--- Challenge Navigation ---
+/home/pongmengheang/os-se-p20240041/os-lab-p20240041/lab2/techcorp/engineering/backend
+/home/pongmengheang/os-se-p20240041/os-lab-p20240041/lab2/techcorp/marketing/assets
+/usr/bin
+/home/pongmengheang/os-se-p20240041/os-lab-p20240041/lab2/techcorp/marketing/assets
+/home/pongmengheang/os-se-p20240041/os-lab-p20240041/lab2/techcorp/hr/onboarding
+checklist.txt
+welcome_guide.txt

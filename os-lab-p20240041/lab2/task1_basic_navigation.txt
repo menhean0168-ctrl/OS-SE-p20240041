@@ -1,0 +1,54 @@
+/home/pongmengheang
+total 84
+drwxr-x--- 16 pongmengheang pongmengheang 4096 Mar 17 14:34 .
+drwxr-xr-x  3 root          root          4096 Mar 12 20:10 ..
+-rw-------  1 pongmengheang pongmengheang 1443 Mar 19 13:33 .bash_history
+-rw-r--r--  1 pongmengheang pongmengheang  220 Mar 31  2024 .bash_logout
+-rw-r--r--  1 pongmengheang pongmengheang 3771 Mar 31  2024 .bashrc
+drwx------ 12 pongmengheang pongmengheang 4096 Mar 17 14:57 .cache
+drwx------ 15 pongmengheang pongmengheang 4096 Mar 19 13:29 .config
+drwxr-xr-x  2 pongmengheang pongmengheang 4096 Mar 12 20:20 Desktop
+drwxr-xr-x  2 pongmengheang pongmengheang 4096 Mar 12 20:20 Documents
+drwxr-xr-x  2 pongmengheang pongmengheang 4096 Mar 12 20:20 Downloads
+-rw-rw-r--  1 pongmengheang pongmengheang   62 Mar 17 14:34 .gitconfig
+drwx------  4 pongmengheang pongmengheang 4096 Mar 12 20:20 .local
+drwxr-xr-x  2 pongmengheang pongmengheang 4096 Mar 12 20:20 Music
+drwxrwxr-x  3 pongmengheang pongmengheang 4096 Mar 17 12:56 os-se-p20240041
+drwxr-xr-x  2 pongmengheang pongmengheang 4096 Mar 12 20:20 Pictures
+-rw-r--r--  1 pongmengheang pongmengheang  807 Mar 31  2024 .profile
+drwxr-xr-x  2 pongmengheang pongmengheang 4096 Mar 12 20:20 Public
+drwx------  4 pongmengheang pongmengheang 4096 Mar 17 15:00 snap
+drwx------  2 pongmengheang pongmengheang 4096 Mar 12 20:20 .ssh
+-rw-r--r--  1 pongmengheang pongmengheang    0 Mar 12 20:33 .sudo_as_admin_successful
+drwxr-xr-x  2 pongmengheang pongmengheang 4096 Mar 12 20:20 Templates
+drwxr-xr-x  2 pongmengheang pongmengheang 4096 Mar 12 20:20 Videos
+--- Root directory (/) ---
+/
+bin
+bin.usr-is-merged
+boot
+cdrom
+dev
+etc
+home
+lib
+lib64
+lib.usr-is-merged
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+sbin.usr-is-merged
+snap
+srv
+swap.img
+sys
+tmp
+usr
+var
+--- Backto home ---
+/home/pongmengheang
