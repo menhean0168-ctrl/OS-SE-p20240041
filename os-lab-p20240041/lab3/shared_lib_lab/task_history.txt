@@ -1,0 +1,101 @@
+=== Full Command History ===
+  403  cat > sysinfo_test_v2.c << 'EOF'
+#include <stdio.h>
+#include "techcorp_sysinfo.h"
+
+int main(void) {
+    printf("=== TechCorp System Info Report v2 ===\n");
+    printf("Hostname : %s\n", tc_get_hostname());
+    printf("Uptime   : %s\n", tc_get_uptime());
+    printf("CPU Cores: %d\n", tc_get_cpu_count());
+    printf("Memory   : %ld MB\n", tc_get_memory_mb());
+    printf("======================================\n");
+    return 0;
+}
+EOF
+
+  404  echo "" >> ../task5_shared_library.txt
+  405  echo "--- Phase 4: Partner A wrote v2 test ---" >> ../task5_shared_library.txt
+  406  cat sysinfo_test_v2.c >> ../task5_shared_library.txt
+  407  gcc sysinfo_test_v2.c -L. -ltechcorp_sysinfo -o sysinfo_test_v2
+  408  echo "" >> ../task5_shared_library.txt
+  409  echo "--- Phase 4: v2 test run ---" >> ../task5_shared_library.txt
+  410  LD_LIBRARY_PATH=. ./sysinfo_test_v2 >> ../task5_shared_library.txt
+  411  # Copy the library to the system library directory
+  412  sudo cp libtechcorp_sysinfo.so /usr/local/lib/
+  413  # Refresh the shared library cache
+  414  sudo ldconfig
+  415  # Verify it is registered
+  416  echo "" >> ../task5_shared_library.txt
+  417  echo "--- System-wide install: ldconfig cache ---" >> ../task5_shared_library.txt
+  418  ldconfig -p | grep techcorp >> ../task5_shared_library.txt
+  419  # Re-test WITHOUT LD_LIBRARY_PATH
+  420  echo "" >> ../task5_shared_library.txt
+  421  echo "--- System-wide test (no LD_LIBRARY_PATH) ---" >> ../task5_shared_library.txt
+  422  ldd ./sysinfo_test_v2 >> ../task5_shared_library.txt 2>&1
+  423  ./sysinfo_test_v2 >> ../task5_shared_library.txt
+  424  # Copy the library to the system library directory
+  425  sudo cp libtechcorp_sysinfo.so /usr/local/lib/
+  426  # Refresh the shared library cache
+  427  sudo ldconfig
+  428  # Verify it is registered
+  429  echo "" >> ../task5_shared_library.txt
+  430  echo "--- System-wide install: ldconfig cache ---" >> ../task5_shared_library.txt
+  431  ldconfig -p | grep techcorp >> ../task5_shared_library.txt
+  432  # Re-test WITHOUT LD_LIBRARY_PATH
+  433  echo "" >> ../task5_shared_library.txt
+  434  echo "--- System-wide test (no LD_LIBRARY_PATH) ---" >> ../task5_shared_library.txt
+  435  ldd ./sysinfo_test_v2 >> ../task5_shared_library.txt 2>&1
+  436  ./sysinfo_test_v2 >> ../task5_shared_library.txt
+  437  gcc sysinfo_test_v2.c -L. -ltechcorp_sysinfo -o sysinfo_test_v2
+  438  echo "--- Phase 4: v2 test run ---" >> ../task5_shared_library.txt
+  439  LD_LIBRARY_PATH=. ./sysinfo_test_v2 >> ../task5_shared_library.txt
+  440  [200~cat > sysinfo_test_v2.c << 'EOF'
+#include <stdio.h>
+#include "techcorp_sysinfo.h"
+
+int main(void) {
+    printf("=== TechCorp System Info Report v2 ===\n");
+    printf("Hostname : %s\n", tc_get_hostname());
+    printf("Uptime   : %s\n", tc_get_uptime());
+    printf("CPU Cores: %d\n", tc_get_cpu_count());
+    printf("Memory   : %ld MB\n", tc_get_memory_mb());
+    printf("======================================\n");
+    return 0;
+}
+
+  441  cat > sysinfo_test_v2.c << 'EOF'
+#include <stdio.h>
+#include "techcorp_sysinfo.h"
+
+int main(void) {
+    printf("=== TechCorp System Info Report v2 ===\n");
+    printf("Hostname : %s\n", tc_get_hostname());
+    printf("Uptime   : %s\n", tc_get_uptime());
+    printf("CPU Cores: %d\n", tc_get_cpu_count());
+    printf("Memory   : %ld MB\n", tc_get_memory_mb());
+    printf("======================================\n");
+    return 0;
+}
+EOF
+
+  442  gcc sysinfo_test_v2.c -L. -ltechcorp_sysinfo -o sysinfo_test_v2
+  443  echo "--- Phase 4: v2 test run ---" >> ../task5_shared_library.txt
+  444  LD_LIBRARY_PATH=. ./sysinfo_test_v2 >> ../task5_shared_library.txt
+  445  cat ../task5_shared_library.txt | tail -20
+  446  LD_LIBRARY_PATH=. ./sysinfo_test_v2
+  447  sudo cp libtechcorp_sysinfo.so /usr/local/lib/
+  448  sudo ldconfig
+  449  echo "--- System-wide install: ldconfig cache ---" >> ../task5_shared_library.txt
+  450  ldconfig -p | grep techcorp >> ../task5_shared_library.txt
+  451  echo "--- System-wide test (no LD_LIBRARY_PATH) ---" >> ../task5_shared_library.txt
+  452  ldd ./sysinfo_test_v2 >> ../task5_shared_library.txt 2>&1
+  453  ./sysinfo_test_v2 >> ../task5_shared_library.txt
+  454  echo "--- Pair Information ---" >> ../task5_shared_library.txt
+  455  echo "Role A (Library Author): Pongmengheang - p20240041" >> ../task5_shared_library.txt
+  456  echo "Role B (Test Author): <Partner Name> - p20240050" >> ../task5_shared_library.txt
+  457  ldconfig -p | grep techcorp
+  458  ldd ./sysinfo_test_v2
+  459  echo "Role B (Test Author): Chhi Layhorng - p20240050" >> ../task5_shared_library.txt
+  460  echo "=== Full Command History ===" > task_history.txt
+  461  history | tail -n 100 >> task_history.txt
