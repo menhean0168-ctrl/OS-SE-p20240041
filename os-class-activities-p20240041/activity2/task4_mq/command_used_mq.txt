@@ -1,0 +1,20 @@
+  499  echo "Role A (Library Author): Pongmengheang - p20240041" >> ../task5_shared_library.txt
+  500  echo "Role B (Test Author): <Partner Name> - p20240050" >> ../task5_shared_library.txt
+  501  ldconfig -p | grep techcorp
+  502  ldd ./sysinfo_test_v2
+  503  echo "Role B (Test Author): Chhi Layhorng - p20240050" >> ../task5_shared_library.txt
+  504  echo "=== Full Command History ===" > task_history.txt
+  505  history | tail -n 100 >> task_history.txt
+  506  tree
+  507  tree lab3
+  508  mkdir -p activity2/{task1,task2,task3_shm,task4_mq,screenshots}
+  509  cd activity2/task1
+  510  nano forkchild.c
+  511  gcc -o forkchild forkchild.c
+  512  ./forkchild > result_forkchild.txt 2>&1
+  513  cat result_forkchild.txt
+  514  ./forkchild > result_forkchild.txt 2>&1
+  515  cat result_forkchild.txt
+  516  ps -ef --forest | grep forkchild
+  517  ./forkchild > result_forkchild.txt 2>&1
+  518  history | tail -n 20 > command_used_mq.txt

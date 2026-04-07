@@ -1,0 +1,20 @@
+  497  ./sysinfo_test_v2 >> ../task5_shared_library.txt
+  498  echo "--- Pair Information ---" >> ../task5_shared_library.txt
+  499  echo "Role A (Library Author): Pongmengheang - p20240041" >> ../task5_shared_library.txt
+  500  echo "Role B (Test Author): <Partner Name> - p20240050" >> ../task5_shared_library.txt
+  501  ldconfig -p | grep techcorp
+  502  ldd ./sysinfo_test_v2
+  503  echo "Role B (Test Author): Chhi Layhorng - p20240050" >> ../task5_shared_library.txt
+  504  echo "=== Full Command History ===" > task_history.txt
+  505  history | tail -n 100 >> task_history.txt
+  506  tree
+  507  tree lab3
+  508  cd task3_shm/
+  509  nano shm-producer.c
+  510  nano shm-consumer.c
+  511  gcc -o shm-producer shm-producer.c -lrt
+  512  gcc -o shm-consumer shm-consumer.c -lrt
+  513  ./shm-producer
+  514  ./shm-consumer > result-shm-ipc.txt
+  515  cat result-shm-ipc.txt
+  516  history | tail -n 20 > command_used_shm.txt
