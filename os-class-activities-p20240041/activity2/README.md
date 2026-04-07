@@ -22,8 +22,8 @@ Screenshot of the parent-child process tree:
 
 ### Output
 ```
-Parent process (PID: 4739) — creating child...
-Parent: waiting for child (PID: 4740) to finish...
+Parent process (PID: 10062) — creating child...
+Parent: waiting for child (PID: 10063) to finish...
 Parent: child exited with status 0
 Parent: done.
 ```
@@ -45,8 +45,8 @@ Parent: done.
 4. **Draw the process tree for your program (parent → child). Include PIDs from your output.**
 
    > ```
-   > forkchild (PID: 4739)
-   > └── forkchild (PID: 4740)
+   > forkchild (PID: 10062)
+   > └── forkchild (PID: 10063)
    >         └── ls -la
    > ```
 
@@ -90,7 +90,7 @@ Screenshot showing PID and Parent PID in the **Details** tab:
 
 4. **In Task Manager, what was the PID of your parent program and the PID of mspaint? Do they match your program's output?**
 
-   > The parent process (winprocess.exe) had PID 27756 and mspaint had PID 8560. Yes, these match exactly what the program printed in the terminal.
+   > The parent process (winprocess.exe) had PID 22108 and mspaint had PID 3684. Yes, these match exactly what the program printed in the terminal.
 
 5. **Compare the Processes tab and the Details tab. Which view makes it easier to understand the parent-child relationship? Why?**
 
@@ -108,7 +108,7 @@ Screenshot of compiling and running `shm-producer` and `shm-consumer`:
 
 ### Output
 ```
-Consumer: reading from shared memory 'OS-rasmeyrithysak'
+Consumer: reading from shared memory 'OS-mengheang'
 Consumer: message = "Hello, this is shared memory IPC!"
 Consumer: shared memory unlinked.
 ```
@@ -147,7 +147,7 @@ Screenshot of compiling and running `sender` and `receiver`:
 
 ### Output
 ```
-Receiver: message received from queue '/queue-rasmey'
+Receiver: message received from queue '/queue-mengheang'
 Receiver: message = "Hello from sender! This is message queue IPC."
 Receiver: queue unlinked.
 ```
