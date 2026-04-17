@@ -1,0 +1,207 @@
+=== Task 4: Process Management ===
+--- Current processes (your user) ---
+    PID TTY          TIME CMD
+   2392 ?        00:00:00 systemd
+   2393 ?        00:00:00 (sd-pam)
+   2403 ?        00:00:00 pipewire
+   2405 ?        00:00:00 pipewire
+   2410 ?        00:00:00 wireplumber
+   2418 ?        00:00:00 pipewire-pulse
+   2419 ?        00:00:00 gnome-keyring-d
+   2424 ?        00:00:00 dbus-daemon
+   2458 tty2     00:00:00 gdm-wayland-ses
+   2463 tty2     00:00:00 gnome-session-b
+   2464 ?        00:00:00 xdg-document-po
+   2478 ?        00:00:00 xdg-permission-
+   2529 ?        00:00:00 gcr-ssh-agent
+   2530 ?        00:00:00 gnome-session-c
+   2544 ?        00:00:00 gvfsd
+   2550 ?        00:00:00 gvfsd-fuse
+   2556 ?        00:00:00 gnome-session-b
+   2595 ?        00:00:31 gnome-shell
+   2596 ?        00:00:00 at-spi-bus-laun
+   2610 ?        00:00:00 dbus-daemon
+   2679 ?        00:00:00 at-spi2-registr
+   2687 ?        00:00:00 gnome-shell-cal
+   2710 ?        00:00:00 evolution-sourc
+   2713 ?        00:00:00 gjs
+   2717 ?        00:00:01 ibus-daemon
+   2718 ?        00:00:00 gsd-a11y-settin
+   2720 ?        00:00:00 gsd-color
+   2722 ?        00:00:00 gsd-datetime
+   2729 ?        00:00:00 gsd-housekeepin
+   2731 ?        00:00:00 gsd-keyboard
+   2732 ?        00:00:00 gsd-media-keys
+   2733 ?        00:00:00 gsd-power
+   2738 ?        00:00:00 gsd-print-notif
+   2739 ?        00:00:00 gsd-rfkill
+   2741 ?        00:00:00 gsd-screensaver
+   2743 ?        00:00:00 gsd-sharing
+   2747 ?        00:00:00 gsd-smartcard
+   2749 ?        00:00:00 gsd-sound
+   2760 ?        00:00:00 gsd-disk-utilit
+   2776 ?        00:00:02 vmtoolsd
+   2779 ?        00:00:00 evolution-alarm
+   2781 ?        00:00:00 gsd-wacom
+   2936 ?        00:00:00 ibus-memconf
+   2937 ?        00:00:01 ibus-extension-
+   2952 ?        00:00:00 goa-daemon
+   2955 ?        00:00:00 ibus-portal
+   2997 ?        00:00:00 evolution-calen
+   3008 ?        00:00:00 Xwayland
+   3010 ?        00:00:00 goa-identity-se
+   3011 ?        00:00:00 gsd-printer
+   3029 ?        00:00:00 evolution-addre
+   3031 ?        00:00:00 gvfs-udisks2-vo
+   3050 ?        00:00:00 gvfs-afc-volume
+   3060 ?        00:00:00 gvfs-gphoto2-vo
+   3065 ?        00:00:00 gvfs-mtp-volume
+   3070 ?        00:00:00 gvfs-goa-volume
+   3082 ?        00:00:00 ibus-engine-sim
+   3117 ?        00:00:00 dconf-service
+   3126 ?        00:00:00 gvfsd-trash
+   3127 ?        00:00:00 gvfsd-metadata
+   3150 ?        00:00:00 gsd-xsettings
+   3177 ?        00:00:00 gjs
+   3204 ?        00:00:00 ibus-x11
+   3209 ?        00:00:00 tracker-miner-f
+   3210 ?        00:00:00 mutter-x11-fram
+   3273 ?        00:00:00 xdg-desktop-por
+   3276 ?        00:00:00 gjs
+   3286 ?        00:00:00 xdg-desktop-por
+   3329 ?        00:00:00 xdg-desktop-por
+   3382 ?        00:00:06 nautilus
+   3407 ?        00:00:00 gvfsd-recent
+   3438 ?        00:00:00 update-notifier
+   3597 ?        00:00:04 gnome-terminal-
+   3605 pts/0    00:00:00 bash
+   4075 pts/0    00:00:00 ps
+--- All processes (snapshot) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.1  0.3  23348 14692 ?        Ss   04:23   0:01 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    04:23   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    04:23   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   04:23   0:00 [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<   04:23   0:00 [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<   04:23   0:00 [kworker/R-kvfree_rcu_reclaim]
+root           7  0.0  0.0      0     0 ?        I<   04:23   0:00 [kworker/R-slub_flushwq]
+root           8  0.0  0.0      0     0 ?        I<   04:23   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I    04:23   0:00 [kworker/0:1-mm_percpu_wq]
+root          11  0.0  0.0      0     0 ?        I<   04:23   0:00 [kworker/0:0H-events_highpri]
+root          12  0.0  0.0      0     0 ?        I    04:23   0:00 [kworker/u512:0-ipv6_addrconf]
+root          13  0.0  0.0      0     0 ?        I<   04:23   0:00 [kworker/R-mm_percpu_wq]
+root          14  0.0  0.0      0     0 ?        R    04:23   0:00 [ksoftirqd/0]
+root          15  0.0  0.0      0     0 ?        I    04:23   0:00 [rcu_preempt]
+root          16  0.0  0.0      0     0 ?        S    04:23   0:00 [rcu_exp_par_gp_kthread_worker/1]
+root          17  0.0  0.0      0     0 ?        S    04:23   0:00 [rcu_exp_gp_kthread_worker]
+root          18  0.0  0.0      0     0 ?        S    04:23   0:00 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    04:23   0:00 [idle_inject/0]
+root          20  0.0  0.0      0     0 ?        S    04:23   0:00 [cpuhp/0]
+--- Process tree ---
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           2       0  0 04:23 ?        00:00:00 [kthreadd]
+root           3       2  0 04:23 ?        00:00:00  \_ [pool_workqueue_release]
+root           4       2  0 04:23 ?        00:00:00  \_ [kworker/R-rcu_gp]
+root           5       2  0 04:23 ?        00:00:00  \_ [kworker/R-sync_wq]
+root           6       2  0 04:23 ?        00:00:00  \_ [kworker/R-kvfree_rcu_reclaim]
+root           7       2  0 04:23 ?        00:00:00  \_ [kworker/R-slub_flushwq]
+root           8       2  0 04:23 ?        00:00:00  \_ [kworker/R-netns]
+root          10       2  0 04:23 ?        00:00:00  \_ [kworker/0:1-mm_percpu_wq]
+root          11       2  0 04:23 ?        00:00:00  \_ [kworker/0:0H-events_highpri]
+root          12       2  0 04:23 ?        00:00:00  \_ [kworker/u512:0-ipv6_addrconf]
+root          13       2  0 04:23 ?        00:00:00  \_ [kworker/R-mm_percpu_wq]
+root          14       2  0 04:23 ?        00:00:00  \_ [ksoftirqd/0]
+root          15       2  0 04:23 ?        00:00:00  \_ [rcu_preempt]
+root          16       2  0 04:23 ?        00:00:00  \_ [rcu_exp_par_gp_kthread_worker/1]
+root          17       2  0 04:23 ?        00:00:00  \_ [rcu_exp_gp_kthread_worker]
+root          18       2  0 04:23 ?        00:00:00  \_ [migration/0]
+root          19       2  0 04:23 ?        00:00:00  \_ [idle_inject/0]
+root          20       2  0 04:23 ?        00:00:00  \_ [cpuhp/0]
+root          21       2  0 04:23 ?        00:00:00  \_ [cpuhp/1]
+root          22       2  0 04:23 ?        00:00:00  \_ [idle_inject/1]
+root          23       2  0 04:23 ?        00:00:00  \_ [migration/1]
+root          24       2  0 04:23 ?        00:00:00  \_ [ksoftirqd/1]
+root          26       2  0 04:23 ?        00:00:00  \_ [kworker/1:0H-events_highpri]
+root          29       2  0 04:23 ?        00:00:00  \_ [kdevtmpfs]
+root          30       2  0 04:23 ?        00:00:00  \_ [kworker/R-inet_frag_wq]
+root          31       2  0 04:23 ?        00:00:00  \_ [rcu_tasks_kthread]
+root          32       2  0 04:23 ?        00:00:00  \_ [rcu_tasks_rude_kthread]
+root          33       2  0 04:23 ?        00:00:00  \_ [rcu_tasks_trace_kthread]
+root          34       2  0 04:23 ?        00:00:00  \_ [kauditd]
+--- Top 10 CPU consumers (via ps, not top) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+pongmen+    2595  2.8 10.9 4065812 432076 ?      Ssl  04:24   0:38 /usr/bin/gnome-shell
+pongmen+    3382  0.6  9.4 1794340 372312 ?      Sl   04:24   0:09 /usr/bin/nautilus --gapplication-service
+pongmen+    3597  0.4  1.5 710700 60872 ?        Ssl  04:25   0:05 /usr/libexec/gnome-terminal-server
+pongmen+    2776  0.2  0.9 223096 38588 ?        Sl   04:24   0:03 /usr/bin/vmtoolsd -n vmusr --blockFd 3 --uinputFd 4
+root         756  0.2  0.2 253432  9616 ?        Ssl  04:23   0:02 /usr/bin/vmtoolsd
+root        1432  0.1  0.5 345012 19812 ?        Ssl  04:24   0:01 /usr/sbin/NetworkManager --no-daemon
+root         267  0.0  0.0      0     0 ?        I    04:23   0:01 [kworker/u514:23-events_unbound]
+pongmen+    2937  0.0  0.7 430180 30556 ?        Sl   04:24   0:01 /usr/libexec/ibus-extension-gtk3
+root           1  0.0  0.3  23348 14692 ?        Ss   04:23   0:01 /sbin/init
+pongmen+    2717  0.0  0.3 397344 12612 ?        Ssl  04:24   0:01 /usr/bin/ibus-daemon --panel disable
+--- Top 10 memory consumers ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+pongmen+    2595  2.8 10.9 4065812 432076 ?      Ssl  04:24   0:38 /usr/bin/gnome-shell
+pongmen+    3382  0.6  9.4 1794340 372312 ?      Sl   04:24   0:09 /usr/bin/nautilus --gapplication-service
+pongmen+    3210  0.0  2.6 1128328 104176 ?      Sl   04:24   0:00 /usr/libexec/mutter-x11-frames
+pongmen+    3150  0.0  2.1 651084 85088 ?        Ssl  04:24   0:00 /usr/libexec/gsd-xsettings
+pongmen+    3008  0.0  1.7 245764 69716 ?        S    04:24   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.OHN1N3 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7 -byteswappedclients
+pongmen+    3276  0.0  1.6 3156812 66152 ?       Sl   04:24   0:00 gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js -E -P /usr/share/gnome-shell/extensions/ding@rastersoft.com/app
+pongmen+    2779  0.0  1.5 835008 61192 ?        Sl   04:24   0:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+pongmen+    3597  0.4  1.5 710700 60872 ?        Ssl  04:25   0:05 /usr/libexec/gnome-terminal-server
+pongmen+    2710  0.0  1.0 604012 43356 ?        Ssl  04:24   0:00 /usr/libexec/evolution-source-registry
+pongmen+    3286  0.0  1.0 564992 41424 ?        Ssl  04:24   0:00 /usr/libexec/xdg-desktop-portal-gnome
+--- Background jobs ---
+[1]-  4167 Running                 sleep 300 &
+[2]+  4168 Running                 sleep 500 &
+--- After Ctrl+Z (stopped job) ---
+[1]   4167 Running                 sleep 300 &
+[2]-  4168 Running                 sleep 500 &
+[3]+  4169 Stopped                 sleep 600
+--- After bg (resumed in background) ---
+[1]   4167 Running                 sleep 300 &
+[2]-  4168 Running                 sleep 500 &
+[3]+  4169 Stopped                 sleep 600
+--- After terminating all sleep jobs ---
+[2]-  4168 Running                 sleep 500 &
+[3]+  4169 Stopped                 sleep 600
+Started sleep with PID: 4176
+--- Available signals ---
+ 1) SIGHUP	 2) SIGINT	 3) SIGQUIT	 4) SIGILL	 5) SIGTRAP
+ 6) SIGABRT	 7) SIGBUS	 8) SIGFPE	 9) SIGKILL	10) SIGUSR1
+11) SIGSEGV	12) SIGUSR2	13) SIGPIPE	14) SIGALRM	15) SIGTERM
+16) SIGSTKFLT	17) SIGCHLD	18) SIGCONT	19) SIGSTOP	20) SIGTSTP
+21) SIGTTIN	22) SIGTTOU	23) SIGURG	24) SIGXCPU	25) SIGXFSZ
+26) SIGVTALRM	27) SIGPROF	28) SIGWINCH	29) SIGIO	30) SIGPWR
+31) SIGSYS	34) SIGRTMIN	35) SIGRTMIN+1	36) SIGRTMIN+2	37) SIGRTMIN+3
+38) SIGRTMIN+4	39) SIGRTMIN+5	40) SIGRTMIN+6	41) SIGRTMIN+7	42) SIGRTMIN+8
+43) SIGRTMIN+9	44) SIGRTMIN+10	45) SIGRTMIN+11	46) SIGRTMIN+12	47) SIGRTMIN+13
+48) SIGRTMIN+14	49) SIGRTMIN+15	50) SIGRTMAX-14	51) SIGRTMAX-13	52) SIGRTMAX-12
+53) SIGRTMAX-11	54) SIGRTMAX-10	55) SIGRTMAX-9	56) SIGRTMAX-8	57) SIGRTMAX-7
+58) SIGRTMAX-6	59) SIGRTMAX-5	60) SIGRTMAX-4	61) SIGRTMAX-3	62) SIGRTMAX-2
+63) SIGRTMAX-1	64) SIGRTMAX	
+--- After SIGSTOP ---
+    PID STAT CMD
+   4176 T    sleep 1000
+--- After SIGCONT ---
+    PID STAT CMD
+   4176 S    sleep 1000
+--- After SIGTERM ---
+    PID STAT CMD
+--- nohup demo ---
+nohup sleep PID: 4181
+ls: cannot access 'nohup.out': No such file or directory
+--- Challenge Process Management ---
+--- Three sleep processes (ps --forest) ---
+pongmen+    4169    3605  0 04:49 pts/0    00:00:00          \_ sleep 600
+pongmen+    4184    3605  0 04:52 pts/0    00:00:00          \_ sleep 100
+pongmen+    4185    3605  0 04:52 pts/0    00:00:00          \_ sleep 200
+pongmen+    4186    3605  0 04:52 pts/0    00:00:00          \_ sleep 300
+pongmen+    4188    3605  0 04:52 pts/0    00:00:00          \_ grep --color=auto sleep
+--- After pkill sleep ---
+[3]+  Stopped                 sleep 600
+--- bash PIDs from pgrep ---
+3605
+--- Highest memory process ---
+Name: gnome-shell  PID: 2595  %MEM: 10.9
