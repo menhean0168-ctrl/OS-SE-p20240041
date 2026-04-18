@@ -10,8 +10,7 @@ pongmen+    7239    7087    7239  0    1 07:17 pts/0    00:00:00 grep --color=au
    7227    7229 pts/1    00:00:00 threads_observe
    7227    7230 pts/1    00:00:00 threads_observe
    7227    7231 pts/1    00:00:00 threads_observe
---- /proc/7227/task/ listing ---
-    PID    SPID TTY          TIME CMD
+
 --- /proc/7280/task/ listing ---
 7280
 7281
