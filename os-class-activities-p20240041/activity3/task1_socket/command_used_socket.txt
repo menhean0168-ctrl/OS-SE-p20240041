@@ -1,0 +1,20 @@
+  796  git commit -m"Lab 4: I/O Redirection, Pipelines & Process Management"
+  797  git push origin master
+  798  ssh ssh2.rathpisey.site
+  799  mkdr -p activity3/{task1_socket,task2_threads,task3_java,screenshots}
+  800  mkdir -p activity3/{task1_socket,task2_threads,task3_java,screenshots}
+  801  cd activity3
+  802  cd task1_socket/
+  803  nano server.c
+  804  nano client.c
+  805  gcc -o server server.c
+  806  gcc -o client client.c
+  807  ./server
+  808  # Run server in background, then client
+  809  ./server > result_server.txt 2>&1 &
+  810  sleep 1
+  811  ./client > result_client.txt 2>&1
+  812  wait
+  813  cat result_server.txt result_client.txt > result_socket.txt
+  814  cat result_socket.txt
+  815  history | tail -n 20 > command_used_socket.txt

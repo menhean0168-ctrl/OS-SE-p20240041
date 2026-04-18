@@ -1,0 +1,30 @@
+  821  ./threads
+  822  ./threads > result_threads.txt 2>&1
+  823  cat result_threads.txt
+  824  ./threads_mutex
+  825  ./threads_mutex > result_threads_mutex.txt 2>&1
+  826  cat result_threads_mutex.txt
+  827  cat result_threads.txt
+  828  nano threads_observe.c
+  829  gcc -o threads_observe threads_observe.c -pthread
+  830  history | tail -n 20 > command_used_threads.txt
+  831  cd ../task3_java
+  832  nano ThreadDemo.java
+  833  javac ThreadDemo.java
+  834  java ThreadDemo
+  835  sudo apt update && sudo apt install default-jdk -y
+  836  java --version
+  837  javac --version
+  838  javac ThreadDemo.java
+  839  java ThreadDemo
+  840  java ThreadDemo > result_thread_demo.txt 2>&1
+  841  cat result_thread_demo.txt
+  842  nano RunnableDemo.java
+  843  javac RunnableDemo.java
+  844  java RunnableDemo > result_runnable_demo.txt 2>&1
+  845  cat result_runnable_demo.txt
+  846  nano PoolDemo.java
+  847  javac PoolDemo.java
+  848  java PoolDemo > result_pool_demo.txt 2>&1
+  849  cat result_pool_demo.txt
+  850  history | tail -n 30 > command_used_java.txt

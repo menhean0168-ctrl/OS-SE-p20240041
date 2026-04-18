@@ -1,0 +1,22 @@
+pongmen+    7227    5327    7227  0    5 07:17 pts/1    00:00:00 ./threads_observe
+pongmen+    7227    5327    7228  0    5 07:17 pts/1    00:00:00 ./threads_observe
+pongmen+    7227    5327    7229  0    5 07:17 pts/1    00:00:00 ./threads_observe
+pongmen+    7227    5327    7230  0    5 07:17 pts/1    00:00:00 ./threads_observe
+pongmen+    7227    5327    7231  0    5 07:17 pts/1    00:00:00 ./threads_observe
+pongmen+    7239    7087    7239  0    1 07:17 pts/0    00:00:00 grep --color=auto threads_observe
+    PID    SPID TTY          TIME CMD
+   7227    7227 pts/1    00:00:00 threads_observe
+   7227    7228 pts/1    00:00:00 threads_observe
+   7227    7229 pts/1    00:00:00 threads_observe
+   7227    7230 pts/1    00:00:00 threads_observe
+   7227    7231 pts/1    00:00:00 threads_observe
+--- /proc/7227/task/ listing ---
+    PID    SPID TTY          TIME CMD
+--- /proc/7280/task/ listing ---
+7280
+7281
+7282
+7283
+7284
+Thread count:
+5

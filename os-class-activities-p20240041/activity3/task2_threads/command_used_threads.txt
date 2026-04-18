@@ -1,0 +1,20 @@
+  811  ./client > result_client.txt 2>&1
+  812  wait
+  813  cat result_server.txt result_client.txt > result_socket.txt
+  814  cat result_socket.txt
+  815  history | tail -n 20 > command_used_socket.txt
+  816  cd ../task2_threads
+  817  nano threads.c
+  818  nano threads_mutex.c
+  819  gcc -o threads threads.c -pthread
+  820  gcc -o threads_mutex threads_mutex.c -pthread
+  821  ./threads
+  822  ./threads > result_threads.txt 2>&1
+  823  cat result_threads.txt
+  824  ./threads_mutex
+  825  ./threads_mutex > result_threads_mutex.txt 2>&1
+  826  cat result_threads_mutex.txt
+  827  cat result_threads.txt
+  828  nano threads_observe.c
+  829  gcc -o threads_observe threads_observe.c -pthread
+  830  history | tail -n 20 > command_used_threads.txt
