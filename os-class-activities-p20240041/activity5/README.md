@@ -5,6 +5,7 @@ Student ID: p20240041
 Language: C++ 
 
 Task 1A: Particle Buffer Before Semaphores
+
 ![Particle simulation before semaphores](screenshots/task1_before_semaphore.png)
 
 Error shown: Pairs are incorrect
@@ -12,6 +13,7 @@ Why: No mutex on the buffer. One producer pushes P1, another sneaks in before P2
 
 
 Task 1B: Particle Buffer After Semaphores
+
 ![Particle simulation after semaphores](screenshots/task1_after_semaphore.png)
 
 Producers: 4 | Buffer: 100 particles (50 pairs)
@@ -20,6 +22,7 @@ Errors during normal run: None
 
 
 Task 2A: HELLO Before Semaphores
+
 ![HELLO before semaphores](screenshots/task2_before_semaphore.png)
 
 Output: HLLOE (wrong order)
@@ -27,6 +30,7 @@ Why: Threads run in whatever order the OS schedules — no ordering is enforced.
 
 
 Task 2B: HELLO After Semaphores
+
 ![HELLO after semaphores](screenshots/task2_after_semaphore.png)
 
 Threads: 3 (one per process)
