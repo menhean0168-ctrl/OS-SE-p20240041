@@ -1,0 +1,4 @@
+=== inbox permissions ===
+drwx-wx-wx 2 se-pong-mengheang se-pong-mengheang 4096 Jun  6 17:35 /home/se-pong-mengheang/public_inbox
+=== inbox files as owner ===
+total 0

@@ -1,0 +1,5 @@
+=== guestbook permissions ===
+-rw------- 1 se-pong-mengheang se-pong-mengheang 0 Jun  6 17:44 /home/se-pong-mengheang/guestbook.txt
+=== sign_book permissions ===
+-rwsr-xr-x 1 se-pong-mengheang se-pong-mengheang 16096 Jun  6 17:46 /home/se-pong-mengheang/bin/sign_book
+=== guestbook contents ===

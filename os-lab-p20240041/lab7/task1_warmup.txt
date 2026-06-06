@@ -1,0 +1,5 @@
+=== warmup permissions ===
+-rwxrwxr-x 1 se-pong-mengheang se-pong-mengheang 76 Jun  6 17:22 /home/se-pong-mengheang/bin/warmup
+=== warmup output ===
+Hello from my first script! My current directory is:
+/home/se-pong-mengheang/bin
