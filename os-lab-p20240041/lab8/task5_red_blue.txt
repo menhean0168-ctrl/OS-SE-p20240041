@@ -1,0 +1,11 @@
+=== public api permissions ===
+drwxr-xr-x 11 se-pong-mengheang se-pong-mengheang 4096 Jun 11 17:00 /home/se-pong-mengheang
+drwxr-xr-x  2 se-pong-mengheang se-pong-mengheang 4096 Jun 11 17:01 /home/se-pong-mengheang/public_api
+total 8
+-rwxrwxr-x 1 se-pong-mengheang se-pong-mengheang 935 Jun 11 17:00 buy_widget
+-rw-rw-rw- 1 se-pong-mengheang se-pong-mengheang   0 Jun 11 17:01 inventory.lock
+-rw-rw-rw- 1 se-pong-mengheang se-pong-mengheang   4 Jun 11 17:00 inventory.txt
+-rw-rw-rw- 1 se-pong-mengheang se-pong-mengheang   0 Jun 11 17:01 sales.log
+=== inventory ===
+100
+=== red team sales evidence ===

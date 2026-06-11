@@ -1,0 +1,14 @@
+Run 1 final inventory: -2
+Run 2 final inventory: -2
+Run 3 final inventory: -2
+Run 4 final inventory: -2
+Run 5 final inventory: -2
+
+Explanation:
+The vulnerable buy_widget has a TOC-TOU race condition. Multiple processes
+read the inventory at the same time before any of them write back, so they
+all see the same value and subtract from it independently. This causes
+deductions to be lost, and the final inventory goes negative because the
+check and the write are not atomic. The consistent -2 result suggests the
+OS scheduler on this server produces a predictable race pattern, but the
+underlying vulnerability is the same.
